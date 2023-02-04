@@ -26,16 +26,17 @@ public class Team {
 
     }
     public void removePlayer(Player player) {
-        if (!players.contains(player)) {
-            System.out.println("Player " + player.getName() + " is not in " + this.name + " team ");
-        } else {
             this.players.remove(player);
+        }
+
+    public void contain(Player player) {
+        if (!players.contains(player)) {
+        System.out.println("Player " + player.getName() + " is not in " + this.name + " team ");
         }
     }
 
-
         public void printRatingOfTeam(){
-        if(players.size() == 0){
+        if(players.size() == 0) {
             return;
         }
 
@@ -46,6 +47,7 @@ public class Team {
             System.out.println(this.getName() + " - " + itemRating);
     }
 }
+
 
 
 

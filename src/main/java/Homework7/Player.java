@@ -90,7 +90,7 @@ public class Player {
         }
     }
     public int getRating(){
-        return (int)Math.round((this.endurance+this.sprint+this.dribble+this.passing+this.shooting)/5.0);
+        return (int)Math.round((endurance+sprint+dribble+passing+shooting)/5.0);
     }
 
 
